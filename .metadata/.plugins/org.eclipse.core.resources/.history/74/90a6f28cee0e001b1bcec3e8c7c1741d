@@ -1,0 +1,8 @@
+package br.com.maratona.dev;
+
+public class ContaPoupanca extends Conta{
+	
+	//Constructor
+		public ContaPoupanca() {}
+
+}

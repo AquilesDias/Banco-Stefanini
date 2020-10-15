@@ -1,0 +1,9 @@
+package br.com.maratona.dev;
+
+public class ContaCorrente extends Conta {
+
+	//Constructor
+	public ContaCorrente() {}
+	
+	
+}
