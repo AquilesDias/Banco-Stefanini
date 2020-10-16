@@ -1,0 +1,32 @@
+package br.com.maratona.dev;
+
+public enum StatusConta {
+	
+	 ATIVO(1, "ATIVO");
+	
+	private String descricao;
+	private Integer codigo;
+	
+	private StatusConta( Integer codigo, String descricao) {
+		this.descricao = descricao;
+		this.codigo = codigo;
+	}
+
+	
+	//GETTERS & SETTERS
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	public Integer getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
+	}
+	
+	
+}

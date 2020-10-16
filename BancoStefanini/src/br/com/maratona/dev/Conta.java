@@ -5,14 +5,15 @@ public class Conta {
 	private Integer conta;
 	private Integer agencia;
 	private Double saldo;
-	private Boolean status;
+	private EnumStatusConta status;
+	private Long codigoPix;
 	
 	//Constructor
 	public Conta() {}
 	
-	
+	 
 	//Methods
-	public void sacar(Double valorSaque) {
+	public void sacar(Double valorSaque) { 
 		this.saldo -= valorSaque;
 	}
 	
@@ -44,13 +45,20 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-
-	public Boolean getStatus() {
+		
+	public EnumStatusConta getStatus() {
 		return status;
 	}
-
-	public void setStatus(Boolean status) {
+	public void setStatus(EnumStatusConta status) {
 		this.status = status;
 	}
 
+	public Long getCodigoPix() {
+		return codigoPix;
+	}
+	public void setCodigoPix(Long codigoPix) {
+		this.codigoPix = codigoPix;
+	}
+
+	
 }

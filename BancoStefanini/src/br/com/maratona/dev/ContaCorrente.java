@@ -1,6 +1,6 @@
 package br.com.maratona.dev;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente extends Conta implements ContaPrivate, Emprestimo {
 
 	private Float limite;
 
@@ -8,12 +8,33 @@ public class ContaCorrente extends Conta {
 	public ContaCorrente() {
 	}
 
+	//GETTER & SETTERS
 	public Float getLimite() {
 		return limite;
 	}
-
 	public void setLimite(Float limite) {
 		this.limite = limite;
 	}
 
+	
+	//METHODS
+	@Override
+	public void sacar(Double valorSaque) {
+		System.out.println("FILHO");
+		super.sacar(valorSaque);
+		
+		//saque com CPMF
+	}
+	
+	//INTERFACE 
+	@Override
+    public void saqueExtra(Float taxa) {
+    	//1.5
+    }
+
+	@Override
+	public void emprestimo(Float taxa) {
+		
+		
+	}
 }

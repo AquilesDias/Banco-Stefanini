@@ -1,0 +1,14 @@
+package br.com.maratona.dev;
+
+public enum StatusConta {
+	
+	 ATIVO(1, "ATIVO");
+	
+	private String descricao;
+	private Integer codigo;
+	
+	private StatusConta(String descricao, Integer codigo) {
+		this.descricao = descricao;
+		this.codigo = codigo;
+	}
+}

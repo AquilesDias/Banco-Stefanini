@@ -1,0 +1,8 @@
+package br.com.maratona.dev;
+
+public class ContaOuro extends Conta implements ContaPrivate {
+	
+	@Override
+	public void saqueExtra(Float taxa) {}
+
+}

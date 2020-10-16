@@ -1,0 +1,29 @@
+package br.com.maratona.dev;
+
+public class Run {
+	
+	public static void main(String args[]) {
+		
+		ContaCorrente contaCorrente = new ContaCorrente();
+		contaCorrente.getLimite();
+		contaCorrente.getCodigoPix();
+		contaCorrente.setSaldo(Double.valueOf(200));
+		
+		ContaPoupanca contaPoupanca = new ContaPoupanca();
+		contaPoupanca.setSaldo(Double.valueOf(1000));
+		
+		Conta conta = new ContaCorrente();
+		Conta poupanca  = new ContaPoupanca();
+		conta.setAgencia(22536);
+
+		
+	 //Cast
+		if(conta instanceof ContaPoupanca) {
+			((ContaPoupanca)conta).getValorRendimento();
+		}
+		else if(conta instanceof ContaCorrente) {
+			((ContaCorrente) conta).getLimite();
+			((ContaCorrente)conta).emprestimo(1.5f);
+		}
+	}
+}
