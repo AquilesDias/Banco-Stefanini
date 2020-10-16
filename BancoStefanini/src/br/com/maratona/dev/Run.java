@@ -43,7 +43,7 @@ public class Run {
 		lista.get(0).getAgencia();
 		
 		//Generico
-		List listas =     new ArrayList<>();
+		List listas = new ArrayList<>();
 		
 	}
 }
