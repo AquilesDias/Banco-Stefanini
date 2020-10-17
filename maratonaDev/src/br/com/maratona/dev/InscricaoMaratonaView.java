@@ -1,6 +1,6 @@
 package br.com.maratona.dev;
 
-import java.io.IOException;
+import java.io.IOException ;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -16,7 +16,7 @@ public class InscricaoMaratonaView extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("GLORIA A DEUS");
 		PrintWriter out =  resp.getWriter();
-		out.print(" <h2> amem senhor </h2> ");
+		out.print( "<h2> amem senhor </h2>");
 	}
 	
 }
